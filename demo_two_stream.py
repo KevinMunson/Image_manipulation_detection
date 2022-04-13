@@ -19,6 +19,7 @@ import os
 
 import cv2
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
 import numpy as np
 import tensorflow as tf
 from lib.config import config as cfg

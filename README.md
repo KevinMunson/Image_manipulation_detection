@@ -10,6 +10,8 @@ Python 3.6
 TensorFlow 1.8.0
 
 # Setup
+- Go to ./lib/utils and run python setup.py build_ext --inplace
+- https://pjreddie.com/projects/pascal-voc-dataset-mirror/ has the datasets
 - Download vgg16 pre-trained weights from [here](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz)
     - save to /data/imagenet_weights/vgg16.ckpt
 - Two-stream neural network model: [lib/nets/vgg16.py](lib/nets/vgg16.py)
