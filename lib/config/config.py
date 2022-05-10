@@ -83,7 +83,8 @@ tf.app.flags.DEFINE_boolean('proposal_use_gt', False, "Whether to add ground tru
 ###########################
 tf.app.flags.DEFINE_float('roi_fg_threshold', 0.5, "Overlap threshold for a ROI to be considered foreground (if >= FG_THRESH)")
 tf.app.flags.DEFINE_float('roi_bg_threshold_high', 0.5, "Overlap threshold for a ROI to be considered background (class = 0 if overlap in [LO, HI))")
-tf.app.flags.DEFINE_float('roi_bg_threshold_low', 0.1, "Overlap threshold for a ROI to be considered background (class = 0 if overlap in [LO, HI))")
+#this has now been changed from 0.1 to 0
+tf.app.flags.DEFINE_float('roi_bg_threshold_low', 0, "Overlap threshold for a ROI to be considered background (class = 0 if overlap in [LO, HI))")
 
 tf.app.flags.DEFINE_boolean('bbox_normalize_targets_precomputed', True, "# Normalize the targets using 'precomputed' (or made up) means and stdevs (BBOX_NORMALIZE_TARGETS must also be True)")
 tf.app.flags.DEFINE_boolean('test_bbox_reg', True, "Test using bounding-box regressors")

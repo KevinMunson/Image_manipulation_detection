@@ -69,7 +69,6 @@ def vis_detections(im, class_name, dets, thresh=0.5):
     plt.tight_layout()
     plt.draw()
 
-
 def demo(sess, net, image_name):
     """Detect object classes in an image using pre-computed object proposals."""
 
@@ -149,5 +148,7 @@ if __name__ == '__main__':
             print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
             print('Demo for lib/layer_utils/{}'.format(file))
             demo(sess, net, file)
+            #added this to save the files to cwd
+            plt.savefig(file, format='png')
 
     plt.show()
