@@ -31,10 +31,10 @@ The code requires a large memory GPU. If you do not have a 6G+ GPU, please reduc
 Dataset size: 10000, epoch: 3
 ![](_image/results.png)
 
-# Finally
+# Finally (old)
 I will update this repo a few weeks later after I installed the new GPU
 
-# Extension
+# Extension (New)
 This repo contains a docker file and can be composed
 ```bash
 docker-compose up
@@ -45,4 +45,4 @@ It uses a tensorflow docker image from 2018 so that it has the proper python(3.6
 It has the name of ImageMan  
 That is the exec to bash into it
 It is running on port 9000 and can do notebooks.
-Tensorboard is also available at localhost:6006 from your browser. 
+Tensorboard is also available at localhost:6006 from your browser.
