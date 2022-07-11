@@ -34,13 +34,15 @@ Dataset size: 10000, epoch: 3
 # Finally
 I will update this repo a few weeks later after I installed the new GPU
 
-#Extension
-This repo contains a docker file and can be compose
+# Extension
+This repo contains a docker file and can be composed
 ```bash
 docker-compose up
 docker exec -it ImageMan bash
 ```
+
 It uses a tensorflow docker image from 2018 so that it has the proper python(3.6) and Tf (1.8)
 It has the name of ImageMan  
 That is the exec to bash into it
-It is running on a port 9000 and can do notebooks.
+It is running on port 9000 and can do notebooks.
+Tensorboard is also available at localhost:6006 from your browser. 

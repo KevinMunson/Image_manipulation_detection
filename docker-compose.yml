@@ -9,3 +9,13 @@ services:
     volumes:
       - .:/home/jovyan/work
     container_name: ImageMan
+  tensorboard:
+      container_name: tensorboard
+      build: .
+      volumes_from:
+        - jupyter
+      ports:
+        - "6006:6006"
+      command:
+        - "tensorboard"
+        - "--logdir=/home/jovyan/work/default"
